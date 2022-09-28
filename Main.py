@@ -1,7 +1,8 @@
 from typing import List
 
 def selectionSort(array, size) -> List[int]:
-  # Write your code herefor i in range(size-1):
+  # Write your code here
+  for i in range(size-1):
     min=array[i]
     minpos=i
     for j in range(i,size):
@@ -13,7 +14,8 @@ def selectionSort(array, size) -> List[int]:
     array[i]=min
     array[minpos]=temp
   return array 
-  
+    
+    
 
 # Do not change the following code
 input_data = input()
